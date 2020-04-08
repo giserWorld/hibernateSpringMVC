@@ -35,5 +35,4 @@
 	    <mapping resource="mapper/UserMapper.hbm.xml" />
 	</session-factory>
 	
-	
 </hibernate-configuration>
