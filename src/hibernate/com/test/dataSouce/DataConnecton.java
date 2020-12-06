@@ -17,9 +17,14 @@ public class DataConnecton {
 	}
 	
 	public static void main(String[] args) {
-		Session session=DataConnecton.getSession();
+		//Session session=DataConnecton.getSession();
 		//获取sql session
 		System.out.println("*********数据库连接成功！**********");
+	}
+	
+	//获取sessionFactory实例
+	public static SessionFactory getSessionFactory() {
+		return sessionFactory;
 	}
 	
 	//获取数据库Session实例
