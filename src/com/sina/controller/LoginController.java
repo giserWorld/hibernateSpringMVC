@@ -19,9 +19,18 @@ public class LoginController {
 	@ResponseBody 
 	public Object login(HttpServletRequest request,HttpServletResponse response){
 		Map<String,Object> map=new HashMap<String,Object>();
-		map.put("mgs","获取数据成功！");
-		map.put("code",0);
-		map.put("data","");
+		String userid=request.getParameter("userid");
+		String password=request.getParameter("password");
+		if(userid.equals("1")&&password.equals("123")){
+			map.put("mgs","登录成功！");
+			map.put("code",0);
+			map.put("data","success");
+		}
+		else{
+			map.put("mgs","账号或密码！");
+			map.put("code",1);
+			map.put("data","faill");
+		}
 		return map;
 	}
 }
