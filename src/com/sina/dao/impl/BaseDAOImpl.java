@@ -1,4 +1,4 @@
-package com.sina.dao;
+package com.sina.dao.impl;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -12,6 +12,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.transform.Transformers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
+import com.sina.dao.BaseDAO;
 
 @Repository("baseDAO")  
 @SuppressWarnings("all")  
